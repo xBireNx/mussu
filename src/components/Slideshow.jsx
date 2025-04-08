@@ -6,7 +6,7 @@ function Slideshow({ photos, onClose }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent(prev => (prev + 1) % photos.length);
-    }, 3000);
+    }, 2000);
     return () => clearInterval(interval);
   }, [photos]);
 
